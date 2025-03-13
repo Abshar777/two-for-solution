@@ -128,7 +128,7 @@ const Footer = () => {
               <div className="col-12">
                 <div className="copyright-content">
                   <p>
-                    © Copyright <a href="#">Bizwheel</a>. Design &amp; Development By
+                    © Copyright <a href="#">Two for Solution</a>. Design &amp; Development By
                     <a target="_blank" href="https://picmaticweb.com/"> PicmaticWeb</a>
                   </p>
                 </div>

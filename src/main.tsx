@@ -10,7 +10,7 @@ import "../public/css/magnific-popup.min.css";
 import "../public/css/owl-carousel.min.css";
 import "../public/css/slicknav.min.css";
 import "../public/css/reset.css";
-import "../public/css/responsive.css";
+import "../public/css/responsive2.css";
 
 import "../public/js/active"
 

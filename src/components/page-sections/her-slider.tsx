@@ -48,7 +48,7 @@ const HeroSlider: React.FC = () => {
                 <div className="welcome-text">
                   <div className="hero-text">
                     <h4>Your time is so important for us</h4>
-                    <h1>Build Your WorldClass Brand with Bizwheel</h1>
+                    <h1>Build Your WorldClass Brand with Two for Solution</h1>
                     <div className="p-text">
                       <p>
                         Nunc tincidunt venenatis elit. Etiam venenatis quam vel maximus bibendum
