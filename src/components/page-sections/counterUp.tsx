@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-import { animate, motion, useAnimation, useMotionValue, useTransform } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import Counter from "../animation/counter";
 
 const CounterUp: React.FC = () => {

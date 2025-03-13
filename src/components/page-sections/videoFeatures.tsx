@@ -41,7 +41,7 @@ const VideoFeature: React.FC = () => {
               </div>
               <div className="b-features">
                 <div className="row">
-                  {whyChooseUs.map((item, index) => (
+                  {whyChooseUs.map((item) => (
                     <div className="col-lg-6 col-md-6 col-12">
                       <div className="single-list-feature">
                         <i className={item.icon}></i>

@@ -7,11 +7,7 @@ import ServicesSection from "./components/page-sections/serviceSection";
 import CallAction from "./components/page-sections/callAction";
 import Testimonials from "./components/page-sections/testimonials";
 import CounterUp from "./components/page-sections/counterUp";
-import TeamSection from "./components/page-sections/team";
-import BlogSection from "./components/page-sections/blog";
-import ClientArea from "./components/page-sections/clientArea";
 import Footer from "./components/global/footer";
-import CampaignSection from "./components/page-sections/visonAndMission";
 
 function App() {
   return (
@@ -25,7 +21,7 @@ function App() {
       <CallAction/>
       <Testimonials/>
       <CounterUp/>
-      <CampaignSection/>
+      {/* <CampaignSection/> */}
       {/* <TeamSection/>
       <BlogSection/>
       <ClientArea/> */}
