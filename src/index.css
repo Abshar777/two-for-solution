@@ -57,7 +57,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @font-face {
   font-family: 'ClashDisplay-Semibold';
   font-weight: 600;
-  src: url("webfonts/ClashDisplay-Semibold.woff") format("woff");
+  src: url("../webfonts/ClashDisplay-Semibold.woff") format("woff");
 }
 
 h1{
