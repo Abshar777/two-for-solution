@@ -22,9 +22,9 @@ const Header: React.FC = () => {
                   <div className="col-lg-2 col-md-3 col-12">
                     {/* Logo */}
                     <div className="logo ">
-                      <div className="img-logo md:-translate-y-2 md:pb-1">
+                      <div className="img-logo ">
                         <a href="index.html">
-                         <div className="flex flex-col justify-center items-center">
+                         <div style={{height:"1rem"}} className="flex flex-col inline-block md:translate-y-0 translate-y-3 justify-center items-center">
                          <h4 className="text-xs logo-text relative z-10" >Two Four </h4>
                          <h4 style={{color:"#f3a712"}} className="text-xs logo-text -translate-y-5 absolute" >Solution</h4>
                          </div>
