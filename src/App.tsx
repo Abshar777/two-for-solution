@@ -11,6 +11,7 @@ import TeamSection from "./components/page-sections/team";
 import BlogSection from "./components/page-sections/blog";
 import ClientArea from "./components/page-sections/clientArea";
 import Footer from "./components/global/footer";
+import CampaignSection from "./components/page-sections/visonAndMission";
 
 function App() {
   return (
@@ -24,9 +25,10 @@ function App() {
       <CallAction/>
       <Testimonials/>
       <CounterUp/>
-      <TeamSection/>
+      <CampaignSection/>
+      {/* <TeamSection/>
       <BlogSection/>
-      <ClientArea/>
+      <ClientArea/> */}
       <Footer/>
     </>
   );

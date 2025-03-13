@@ -2,18 +2,19 @@ import React from "react";
 
 const Testimonials: React.FC = () => {
   return (
-    <section
+    <div className="w-full h-full p-2">
+        <section
       className="testimonials section-space"
-      style={{ backgroundImage: "url('img/testimonial-bg.jpg')" }}
+      style={{ backgroundImage: "url('img/testimonial-bg.jpg')", borderRadius:"20px" }}
     >
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 col-md-9 col-12">
-            <div className="section-title default text-left">
-              <div className="section-top">
+          <div style={{borderRadius:"20px"}} className="col-lg-6 col-md-9 col-12">
+            <div style={{borderRadius:"20px"}} className="section-title default text-left">
+              <div style={{borderRadius:"20px"}} className="section-top">
                 <h1><b>Our Satisfied Clients</b></h1>
               </div>
-              <div className="section-bottom">
+              <div style={{borderRadius:"20px"}} className="section-bottom">
                 <div className="text">
                   <p>Some of our great clients and their reviews</p>
                 </div>
@@ -22,7 +23,7 @@ const Testimonials: React.FC = () => {
             <div className="testimonial-inner">
               <div className="testimonial-slider">
                 {testimonials.map((testimonial, index) => (
-                  <div className="single-slider" key={index}>
+                  <div style={{borderRadius:"20px"}} className="single-slider" key={index}>
                     <ul className="star-list">
                       {[...Array(5)].map((_, i) => (
                         <li key={i}><i className="fa fa-star"></i></li>
@@ -32,9 +33,9 @@ const Testimonials: React.FC = () => {
                       Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <strong>industry's standard</strong> dummy text ever since.
                     </p>
                     <div className="t-info">
-                      <div className="t-left">
-                        <div className="client-head">
-                          <img src={testimonial.image} alt="#" />
+                      <div style={{borderRadius:"20px"}} className="t-left">
+                        <div style={{borderRadius:"20px"}} className="client-head">
+                          <img style={{borderRadius:"20px"}} src={testimonial.image} alt="#" />
                         </div>
                         <h2>
                           {testimonial.name} <span>{testimonial.position}</span>
@@ -54,6 +55,7 @@ const Testimonials: React.FC = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

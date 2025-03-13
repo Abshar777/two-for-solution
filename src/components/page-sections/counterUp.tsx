@@ -1,31 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
+import { animate, motion, useAnimation, useMotionValue, useTransform } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import Counter from "../animation/counter";
 
 const CounterUp: React.FC = () => {
   return (
-    <section className="counterup">
-      <div className="container">
-        <div className="row">
-          {counters.map((counter, index) => (
-            <div className="col-lg-3 col-md-6 col-12" key={index}>
-              <div className="single-counter">
-                <div className="icon">
-                  <i className={`fa ${counter.icon}`}></i>
-                </div>
-                <div className="conter-content">
-                  <div className="counter-head">
-                    <h3>
-                      <b className="number">{counter.number}</b>
-                      <span>{counter.suffix}</span>
-                    </h3>
-                  </div>
-                  <p>{counter.label}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+    <div className="w-full h-full p-2">
+      <section style={{ borderRadius: "20px" }} className="counterup">
+        <div className="container">
+          <div className="row">
+            {counters.map((counter, index) => (
+              <CounterItem key={index} counter={counter} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+const CounterItem: React.FC<{ counter: { number: string; suffix: string; label: string; icon: string } }> = ({ counter }) => {
+  return (
+    <div className="col-lg-3 col-md-6 col-12">
+      <div className="single-counter">
+        <div className="icon">
+          <i className={`fa ${counter.icon}`}></i>
+        </div>
+        <div className="conter-content">
+          <div className="counter-head">
+            <h3>
+             <Counter value={parseInt(counter.number)} />
+              <span>{counter.suffix}</span>
+            </h3>
+          </div>
+          <p className="-translate-y-10">{counter.label}</p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

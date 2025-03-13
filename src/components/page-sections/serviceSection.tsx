@@ -1,4 +1,5 @@
 import React from "react";
+import { serviceWeProvide } from "../../constants/serviceWeProvide";
 
 const ServicesSection: React.FC = () => {
   return (
@@ -9,17 +10,17 @@ const ServicesSection: React.FC = () => {
             <div className="section-title style2 text-center">
               <div className="section-top">
                 <h1>
-                  <span>Creative</span>
-                  <b>Service We Provide</b>
+                  <span>Quality</span>
+                  <b>Services We Provide</b>
                 </h1>
                 <h4>We provide quality service &amp; support..</h4>
               </div>
               <div className="section-bottom">
                 <div className="text-style-two">
                   <p>
-                    Aliquam Sodales Justo Sit Amet Urna Auctor Scelerisquinterdum Leo
-                    Anet Tempus Enim Esent Egetis Hendrerit Vel Nibh Vitae Ornar Sem
-                    Velit Aliquam
+                    At Two Four Solutions, we offer an extensive range of
+                    professional services designed to support your business at
+                    every stage. 
                   </p>
                 </div>
               </div>
@@ -27,49 +28,24 @@ const ServicesSection: React.FC = () => {
           </div>
         </div>
         <div className="row">
-          {[
-            {
-              icon: "fa-solid fa-handshake",
-              image: "img/services/service-01.jpg",
-              title: "Business Strategy",
-              link: "service-business.html",
-              description:
-                "Cras venenatis, purus sit amet tempus mattis, justo nisi facilisis metus, in tempus ipsum ipsum eu ipsum. Class aptent taciti",
-            },
-            {
-              icon: "fa-brands fa-html5",
-              image: "img/services/service-02.jpg",
-              title: "Web Development",
-              link: "service-develop.html",
-              featured: true,
-              description:
-                "Cras venenatis, purus sit amet tempus mattis, justo nisi facilisis metus, in tempus ipsum ipsum eu ipsum. Class aptent taciti",
-            },
-            {
-              icon: "fa fa-cube",
-              image: "img/services/service-03.jpg",
-              title: "Market Research",
-              link: "service-market.html",
-              description:
-                "Cras venenatis, purus sit amet tempus mattis, justo nisi facilisis metus, in tempus ipsum ipsum eu ipsum. Class aptent taciti",
-            },
-          ].map((service, index) => (
-            <div className="col-lg-4 col-md-4 col-12" key={index}>
-              <div className="single-service">
-                <div className="service-head">
-                  <div className="icon-bg">
-                    <i className={service.icon}></i>
+          {serviceWeProvide.map((service, index) => (
+            <div style={{borderRadius:"20px"}} className="col-lg-4 col-md-4 col-12" key={index}>
+              <div style={{borderRadius:"20px"}} className="single-service">
+                <div  className="service-head p-2">
+                  <div style={{borderRadius:"20px"}} className="icon-bg translate-x-2 -translate-y-2">
+                    <i style={{borderRadius:"20px"}} className={service.icon}></i>
                   </div>
-                  {service.featured && <div className="featured">Featured</div>}
-                  <img src={service.image} alt="#" />
+
+                  <img style={{borderRadius:"20px"}} src={service.image} alt="#" />
                 </div>
                 <div className="service-content">
                   <h4>
-                    <a href={service.link}>{service.title}</a>
+                    <a href="#">{service.title}</a>
                   </h4>
                   <p>{service.description}</p>
-                  <a className="btn" href={service.link}>
-                    <i className="fa-solid fa-circle-arrow-right"></i>View Service
+                  <a className="btn" href="#">
+                    <i className={service.icon}></i>View
+                    Service
                   </a>
                 </div>
               </div>

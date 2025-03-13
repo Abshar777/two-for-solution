@@ -63,6 +63,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 h1{
   font-family: 'ClashDisplay-Semibold' !important;
 }
+.logo-text{
+  font-family: 'ClashDisplay-Semibold' !important;
+}
 
 
 /*======================================
@@ -1895,7 +1898,7 @@ p.has-large-font-size {
 Footer CSS
 ======================================*/
 .footer {
-background-color: #2e2751;
+background-color: #002d8e;
 }
 .footer .footer-top {
   padding: 50px 0 80px;
@@ -2037,7 +2040,7 @@ right: 15px;
 transition:all 0.3s ease;
 }
 .footer .footer-newsletter form button:hover{
-background:#2E2751;
+/* background:#2E2751; */
 }
 /* Footer News */
 .footer-news .single-f-news .content {
@@ -2181,16 +2184,17 @@ opacity: 0.65;
   margin-bottom: 10px;
   font-weight: 400;
   display: inline-block;
-  background: #2E2751;
+  background: #105DF6;
+  border-radius: 20px;
   padding: 8px 20px;
   font-size: 16px;
 }
 .hero-slider .hero-text h4:before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 15px;
   bottom: -8px;
-  border-top: 8px solid #2E2751;
+  border-top: 8px solid #105df665;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
 }
@@ -2201,13 +2205,14 @@ font-weight: bold;
 line-height: 65px;
 margin-bottom: 20px;
 }
+
 .hero-slider .hero-text h1::before {
   content: "";
   position: absolute;
   left: 0;
   width: 50px;
   height: 6px;
-  background: #f3a712;
+  background: #ffffff40;
   bottom: -3px;
 display:none;
 }
@@ -2240,11 +2245,29 @@ right:0;
 margin: 0;
   width: 100%;
 }
+
+.hero-slider .owl-stage{
+  height: 100% !important;
+  border-radius: 20px;
+}
+
+.hero-slider .owl-stage-outer{
+  height: 100% !important;
+  border-radius: 20px;
+}
+
+.hero-slider .owl-item{
+  height: 100% !important;
+  border-radius: 20px;
+}
+
 .hero-slider .owl-carousel .owl-nav div {
   width: 50px;
   height: 60px;
   line-height: 60px;
-  background: #f3a712;
+  background: #ffffff40;
+  backdrop-filter: blur(22px);
+  border-radius: 20px;
   color: #fff;
   position: absolute;
   margin: 0;
@@ -2254,13 +2277,13 @@ margin: 0;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  border-radius: 0px;
+
   top: 50%;
   margin-top: -30px;
 }
 .hero-slider .owl-carousel .owl-nav div:hover{
 color:#fff;
-background:#2E2751;
+/* background:#2E2751; */
 }
 .hero-slider .owl-carousel .owl-nav .owl-prev{
 left:-100px;
@@ -2945,6 +2968,7 @@ padding:50px 0;
 }
 .call-action.overlay:before {
   opacity: 0.92;
+  border-radius: 20px;
   background: #155dfc;
 }
 .call-action .call-inner {
@@ -3387,7 +3411,7 @@ margin:0;
 }
 .testimonial-inner .star-list li i {
   font-size: 15px;
-  color: #155dfc;
+  color: #f3a712;
 }
 .testimonial-inner .single-slider p {
   position: relative;
@@ -3478,7 +3502,7 @@ CounterUp CSS
 ========================================*/ 
 .counterup{
 padding:50px 0 80px;
-background:#2E2751;
+background:#f3a712;
 }
 .counterup .title-bg {
 opacity: 0.2;
@@ -4609,6 +4633,7 @@ position:relative;
   left: -14px;
   transform: inherit;
   font-weight: 500;
+  border-radius: 0 10px 10px;
   top: 50%;
   margin-top: -22px;
 }

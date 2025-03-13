@@ -6,17 +6,17 @@ import {
 
 const Topbar: React.FC = () => {
   return (
-    <div className="topbar">
+    <div className="topbar md:block hidden">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 col-12">
             {/* Top Contact */}
-            <div className="top-contact">
+            <div className="top-contact ">
               <div className="single-contact">
-                <i className="fa fa-phone"></i>Phone: +(600) 125-4985-214
+                <i className="fa fa-phone"></i>Phone: +(971) 505949586
               </div>
               <div className="single-contact">
-                <i className="fa fa-envelope-open"></i>Email: info@yoursite.com
+                <i className="fa fa-envelope-open"></i>Email: gm@twofoursolutions.com
               </div>
               <div className="single-contact">
                 <i className="fa-regular fa-clock"></i>Opening: 08AM - 09PM

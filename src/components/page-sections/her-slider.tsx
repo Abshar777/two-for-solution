@@ -1,102 +1,54 @@
 import React from "react";
-
+import { heroSlider } from "../../constants/hero";
 const HeroSlider: React.FC = () => {
   return (
-    <section className="hero-slider style1">
-      <div className="home-slider">
+    <section className="hero-slider style1 rounded-2xl p-2 flex items-center justify-center overflow-hidden">
+      <div className="home-slider rounded-2xl w-[99%]  h-full relative">
         {/* Single Slider */}
-        <div
-          className="single-slider"
-          style={{ backgroundImage: "url('img/slider-image/slider-image1.jpg')" }}
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-7 col-md-8 col-12">
-                <div className="welcome-text">
-                  <div className="hero-text">
-                    <h4>We are always ready to help you</h4>
-                    <h1>Our Creative Designer Waiting for Projects</h1>
-                    <div className="p-text">
-                      <p>
-                        Nunc tincidunt venenatis elit. Etiam venenatis quam vel maximus bibendum
-                        Pellentesque elementum dapibus diam tristique
-                      </p>
-                    </div>
-                    <div className="button">
-                      <a href="contact.html" className="bizwheel-btn theme-1 effect">
-                        Work with us
-                      </a>
-                      <a href="portfolio.html" className="bizwheel-btn theme-2 effect">
-                        View Our Portfolio
-                      </a>
-                    </div>
+        {heroSlider.map((slider) => (
+          <div className="w-full h-full   flex justify-center items-center mt-4">
+            <div className="w-full h-full top-2 absolute  overflow-hidden rounded-2xl">
+              <img
+                src={slider.image}
+                alt="Hero Slider"
+                className="w-full rounded-2xl object-cover"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  borderRadius: "20px",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className="container -translate-y-16  relative z-[10]">
+              <div className="welcome-text ">
+                <div className="hero-text">
+                  <h4 className="text-white">{slider.title}</h4>
+                  <h1 className="text-white">{slider.title}</h1>
+                  <div className="p-text">
+                    <p className="text-white">{slider.caption}</p>
+                  </div>
+                  <div style={{ borderRadius: "20px" }} className="button ">
+                    <a
+                      style={{ borderRadius: "20px", backgroundColor: "#ffffff40", backdropFilter: "blur(10px)" }}
+                      href="contact.html"
+                      className="bizwheel-btn  rounded-2xl backdrop-blur-3xl  effect"
+                    >
+                      {slider.btn1}
+                    </a>
+                    <a
+                    style={{borderRadius:"20px",  backdropFilter: "blur(10px)" }}
+                      href="portfolio.html"
+                      className="bizwheel-btn md:mt-0 mt-2 theme-2 effect"
+                    >
+                      {slider.btn2}
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        {/*/ End Single Slider */}
-        {/* Single Slider */}
-        <div
-          className="single-slider"
-          style={{ backgroundImage: "url('img/slider-image/slider-image2.jpg')" }}
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-7 col-md-8 col-12">
-                <div className="welcome-text">
-                  <div className="hero-text">
-                    <h4>Your time is so important for us</h4>
-                    <h1>Build Your WorldClass Brand with Two for Solution</h1>
-                    <div className="p-text">
-                      <p>
-                        Nunc tincidunt venenatis elit. Etiam venenatis quam vel maximus bibendum
-                        Pellentesque elementum dapibus diam tristique
-                      </p>
-                    </div>
-                    <div className="button">
-                      <a href="blog.html" className="bizwheel-btn theme-1 effect">
-                        Read our blog
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/*/ End Single Slider */}
-        {/* Single Slider */}
-        <div
-          className="single-slider"
-          style={{ backgroundImage: "url('img/slider-image/slider-image3.jpg')" }}
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-7 col-md-8 col-12">
-                <div className="welcome-text">
-                  <div className="hero-text">
-                    <h4>Our experties are waiting for you</h4>
-                    <h1>Best Way to Represent your Next Business</h1>
-                    <div className="p-text">
-                      <p>
-                        Nunc tincidunt venenatis elit. Etiam venenatis quam vel maximus bibendum
-                        Pellentesque elementum dapibus diam tristique
-                      </p>
-                    </div>
-                    <div className="button">
-                      <a href="team.html" className="bizwheel-btn theme-2 effect">
-                        Our Leaders
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/*/ End Single Slider */}
+        ))}
       </div>
     </section>
   );
