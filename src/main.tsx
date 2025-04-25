@@ -12,13 +12,13 @@ import "../public/css/slicknav.min.css";
 import "../public/css/reset.css";
 import "../public/css/responsive2.css";
 
-import "../public/js/active"
+import "../public/js/active";
 
-
-import App from "./App.tsx";
+import { RouterProvider } from "react-router-dom";
+import router from "./router/router";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>
 );

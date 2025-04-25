@@ -14,11 +14,11 @@
 
     <!-- Title Tag  -->
     <title>
-      Bizwheel - Multipurpose Business & Digital Agency Html5 Template
+      2 for solutions
     </title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/favicon.png" href="img/favicon.png" />
+    <link rel="icon" type="/image/favicon.png" href="img/favicon.png" />
 
     <!-- Web Font -->
     <link
@@ -39,7 +39,14 @@
   <body>
     <div id="root"></div>
 
-    
+
+    <!-- whe go childe route th path is change this csript importing path is chnaging fix that  -->
+  
+    <!-- set base path -->
+    <script>
+      const basePath = window.location.pathname.split('/')[1];
+      document.head.appendChild(document.createElement('base')).href = `/${basePath}`;
+    </script>
     <!-- Jquery JS -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery-migrate-3.0.0.js"></script>

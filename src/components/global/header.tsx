@@ -1,4 +1,4 @@
-import React from "react";
+
 import Topbar from "../ui/topbar";
 import { navItems } from "../../constants/header";
 const Header: React.FC = () => {
@@ -23,13 +23,47 @@ const Header: React.FC = () => {
                     {/* Logo */}
                     <div className="logo ">
                       <div className="img-logo ">
-                        <a href="index.html">
-                         <div style={{height:"1rem"}} className="flex flex-col inline-block md:translate-y-0 translate-y-3 justify-center items-center">
-                         <h4 className="text-xs logo-text relative z-10" >Two Four </h4>
-                         <h4 style={{color:"#f3a712"}} className="text-xs logo-text -translate-y-5 absolute" >Solution</h4>
-                         </div>
-                          {/* <img src="img/logo.png" alt="Logo" />
-                          <img src="/img/agency/bizwheel-dark.png" alt="Two for Solution" /> */}
+                        <a href="/">
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: ".6rem",
+                              transform: "translateY(-.7rem)",
+                            }}
+                            className=""
+                          >
+                            <div
+                              style={{
+                                width: "2.5rem",
+                                height: "2.5rem",
+                                transform: "translateY(.7rem) translateX(.4rem)",
+                            
+                              }}
+                              className=""
+                            >
+                              <img style={{
+                                display:"block",
+                                mixBlendMode:"darken"
+                              }} src="/logo.svg"  />
+                            </div>
+                            <div
+                              style={{ height: "1rem",transform:"translateY(-.3rem)" }}
+                              className="flex flex-col inline-block md:translate-y-0 justify-center items-center"
+                            >
+                              <h4 className="text-xs logo-text relative z-10">
+                                Two Four{" "}
+                              </h4>
+                              <h4
+                                style={{ color: "#4CAF50" }}
+                                className="text-xs logo-text  -translate-y-2 absolute"
+                              >
+                                Solution
+                              </h4>
+                            </div>
+                          </div>
+
+                          {/* <img src="img/agency/bizwheel-dark.png" alt="Two for Solution" /> */}
                         </a>
                       </div>
                     </div>
@@ -46,8 +80,28 @@ const Header: React.FC = () => {
                               className="nav main-menu menu navbar-nav"
                             >
                               {navItems.map((item, index) => (
-                                <li key={index} className="">
+                                <li
+                                  key={index}
+                                  className={`${
+                                    item.children.length > 0
+                                      ? "icon-active"
+                                      : ""
+                                  }`}
+                                >
                                   <a href={item.link}>{item.name}</a>
+                                  {item.children.length > 0 && (
+                                    <ul className="sub-menu">
+                                      {item.children.map(
+                                        (child, childIndex) => (
+                                          <li key={childIndex}>
+                                            <a href={child.link}>
+                                              {child.name}
+                                            </a>
+                                          </li>
+                                        )
+                                      )}
+                                    </ul>
+                                  )}
                                 </li>
                               ))}
                             </ul>
@@ -56,7 +110,7 @@ const Header: React.FC = () => {
                       </nav>
                       {/* End Main Menu */}
                       <div className="right-button rounded-[15px]">
-                        <a href="contact.html" className="bizwheel-btn">
+                        <a href="contact" className="bizwheel-btn">
                           Get a Quote
                         </a>
                       </div>
@@ -79,23 +133,22 @@ const Header: React.FC = () => {
         <div className="single-content">
           <h4>About Two for Solution</h4>
           <p>
-            The main component of a healthy environment for self-esteem is that
-            it needs to be nurturing. It should provide unconditional warmth.
+            Two Four Solutions LLC is a UAE based company that provides a wide range of services to the oil and gas industry.
           </p>
           <ul className="address-widget-list">
             <li className="footer-mobile-number">
-              <i className="fa fa-phone"></i> +(600) 125-4985-214
+              <i className="fa fa-phone"></i> +(971) 505949586
             </li>
             <li className="footer-mobile-number">
-              <i className="fa fa-envelope"></i> info@yoursite.com
+              <i className="fa fa-envelope"></i> gm@twofoursolutions.com
             </li>
             <li className="footer-mobile-number">
-              <i className="fa-solid fa-location-dot"></i> House Building Uttara
+              <i className="fa-solid fa-location-dot"></i> Ras Al Khaimah, UAE
             </li>
           </ul>
           <div className="side-button">
-            <a href="portfolio.html" className="bizwheel-btn theme-2 effect">
-              View Our Portfolio
+            <a style={{borderRadius:"20px"}} href="contact" className="bizwheel-btn theme-2 effect">
+              Get a Quote
             </a>
           </div>
         </div>

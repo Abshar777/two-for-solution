@@ -1,5 +1,5 @@
 
-import { serviceWeProvide } from "../../constants/serviceWeProvide";
+import { serviceWeProvide2 } from "../../../constants/serviceWeProvide";
 
 const ServicesSection: React.FC = () => {
   const animation = ["fade-up", "fade-down", "fade-left", "fade-right"];
@@ -31,12 +31,12 @@ const ServicesSection: React.FC = () => {
           </div>
         </div>
         <div className="row">
-          {serviceWeProvide.map((service, index) => (
+          {serviceWeProvide2.map((service, index) => (
             <div
               data-aos={animation[0]}
               data-aos-delay={index * 100}
               style={{ borderRadius: "20px" }}
-              className="col-lg-4 col-md-4 col-12"
+              className="col-lg-6 col-md-6 col-12"
               key={index}
             >
               <div style={{ borderRadius: "20px" }} className="single-service">

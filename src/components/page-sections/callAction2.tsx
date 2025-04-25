@@ -14,16 +14,8 @@ const CallAction = () => {
           <div style={{borderRadius:"20px"}} className="row">
             <div style={{borderRadius:"20px"}} className="col-lg-9 col-12">
               <div style={{borderRadius:"20px"}} className="call-inner">
-                <h2>Discover Our Full Range of Services</h2>
-                <p>
-                  At Two Four Solutions, we offer a comprehensive range of
-                  services designed to support your business at every stage.
-                  Whether you're undertaking a complex project, seeking
-                  cutting-edge chemical solutions, or needing reliable
-                  procurement services, our expert team is here to provide
-                  tailored, high-quality services that help you achieve
-                  operational excellence.
-                </p>
+                <h2 style={{fontSize:"2rem"}}>Explore Our Services | Get in Touch with Our Experts</h2>
+       
               </div>
             </div>
             <div style={{borderRadius:"20px"}} className="col-lg-3 col-12">
@@ -33,7 +25,7 @@ const CallAction = () => {
                   style={{ borderRadius: "20px" }}
                   className="bizwheel-btn"
                 >
-                  Our Services
+                  Contact Us
                 </a>
               </div>
             </div>

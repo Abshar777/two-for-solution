@@ -1,12 +1,17 @@
 import { features } from "../../constants/features";
 
 const FeaturesArea: React.FC = () => {
+  const animation = ["fade-right", "fade-left", "fade-down", "fade-up"];
   return (
-    <section className="features-area section-bg">
+    <section 
+    
+    className="features-area section-bg">
       <div className="container">
         <div className="row">
           {features.map((feature, index) => (
             <div
+              data-aos={animation[index % animation.length]}
+              data-aos-delay={index * 100}
               key={index}
               style={{ borderRadius: "20px" }}
               className="col-lg-3  col-md-6 col-12"

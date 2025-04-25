@@ -19,6 +19,8 @@ export const heroSlider = [
         caption: "End-to-End Project Management for Complex Industries",
         btn1: "Explore Our Expertise",
         btn2: "Request our Service",
+        btn1Link: "/our-services/project-management",
+        btn2Link: "/contact-us",
     },
     {
         id: 2,
@@ -27,6 +29,8 @@ export const heroSlider = [
         caption: "Revolutionizing Oil & Gas Operations with Innovative Chemical Solutions",
         btn1: "Discover Our Chemical Solutions & products",
         btn2: "Request our Service",
+        btn1Link: "/our-services/oil-field-chemicals",
+        btn2Link: "/contact-us",
     },
     {
         id: 3,
@@ -35,5 +39,7 @@ export const heroSlider = [
         caption: "Global Sourcing of Premium Products to Drive Your Industry Forward",
         btn1: "Browse Our Products",
         btn2: "Request our Service",
+        btn1Link: "/our-services/general-trading",
+        btn2Link: "/contact-us",
     },
 ]   

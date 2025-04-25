@@ -1,80 +1,74 @@
-import React from "react";
+ ;
 
-const Testimonials: React.FC = () => {
+const TestimonialSection: React.FC = () => {
+  const testimonials = [
+    {
+      clientImg: 'img/client/client-7.png',
+      userImg: 'img/users/user-01.png',
+      name: 'MarkPhillips',
+      location: 'Alaska, US',
+    },
+    {
+      clientImg: 'img/client/client-8.png',
+      userImg: 'img/users/user-02.png',
+      name: 'MarkPhillips',
+      location: 'Alaska, US',
+    },
+    {
+      clientImg: 'img/client/client-9.png',
+      userImg: 'img/users/user-03.png',
+      name: 'MarkPhillips',
+      location: 'Alaska, US',
+    },
+  ];
+
   return (
-    <div className="w-full h-full p-2">
-        <section
-      className="testimonials section-space"
-      style={{ backgroundImage: "url('img/testimonial-bg.jpg')", borderRadius:"20px" }}
+   <div style={{width:"100%",padding:"15px"}} className="">
+     <section
+     data-aos="fade-up"
+      className="home-4-testimonial"
+      style={{ backgroundImage: "url('img/testimonial-bg2.png')", borderRadius:"20px",overflow:"hidden" }}
     >
       <div className="container">
-        <div className="row">
-          <div style={{borderRadius:"20px"}} className="col-lg-6 col-md-9 col-12">
-            <div style={{borderRadius:"20px"}} className="section-title default text-left">
-              <div style={{borderRadius:"20px"}} className="section-top">
-                <h1><b>Our Satisfied Clients</b></h1>
-              </div>
-              <div style={{borderRadius:"20px"}} className="section-bottom">
-                <div className="text">
-                  <p>Some of our great clients and their reviews</p>
+        <div className="row justify-content-center">
+          <div className="col-lg-4 text-center position-relative">
+            <h4 className="home-three-subtitle">TESTIMONIALS</h4>
+            <h2 className="home-three-title">What People Say</h2>
+            <img src="img/icons/icon-06.svg" alt="Icon" className="quote-icon" />
+          </div>
+        </div>
+        <div className="testimonial-slider-4">
+          {Array.from({ length: 7 }).map((_, index) => {
+            const testimonial = testimonials[index % testimonials.length];
+            return (
+              <div className="single-slider" key={index}>
+                <div className="client">
+                  {/* <img src={testimonial.clientImg} alt="Client" /> */}
+                </div>
+                <div className="icon">
+                  {/* <img src="img/icons/icon-05.svg" alt="Quote" className="icon" /> */}
+                </div>
+                <p className="author-quote">
+                  Customer support is excellent and documentation good – novice can easily understand.
+                  Although I had a problem with the performance, thanks to the customer support.
+                </p>
+                <div className="author">
+                  <div>
+                    <img src={testimonial.userImg} alt="User" />
+                  </div>
+                  <div>
+                    <p className="author-name">{testimonial.name}</p>
+                    <p className="author-meta">{testimonial.location}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="testimonial-inner">
-              <div className="testimonial-slider">
-                {testimonials.map((testimonial, index) => (
-                  <div style={{borderRadius:"20px"}} className="single-slider" key={index}>
-                    <ul className="star-list">
-                      {[...Array(5)].map((_, i) => (
-                        <li key={i}><i className="fa fa-star"></i></li>
-                      ))}
-                    </ul>
-                    <p>
-                      Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <strong>industry's standard</strong> dummy text ever since.
-                    </p>
-                    <div className="t-info">
-                      <div style={{borderRadius:"20px"}} className="t-left">
-                        <div style={{borderRadius:"20px"}} className="client-head">
-                          <img style={{borderRadius:"20px"}} src={testimonial.image} alt="#" />
-                        </div>
-                        <h2>
-                          {testimonial.name} <span>{testimonial.position}</span>
-                        </h2>
-                      </div>
-                      <div className="t-right">
-                        <div className="quote">
-                          <i className="fa fa-quote-right"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
-    </div>
+   </div>
   );
 };
 
-const testimonials = [
-  {
-    name: "Julias Dien",
-    position: "CEO / Creative IT",
-    image: "img/testi1.png",
-  },
-  {
-    name: "Buman Panama",
-    position: "Founder, Jolace Group",
-    image: "img/testi2.png",
-  },
-  {
-    name: "Donald Bonam",
-    position: "Developer, Soft IT",
-    image: "img/testi1.png",
-  },
-];
-
-export default Testimonials;
+export default TestimonialSection;

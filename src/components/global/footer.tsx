@@ -3,7 +3,7 @@ const Footer = () => {
     <footer
       className="footer"
       style={{
-        backgroundImage: "url('img/map.png')",
+        backgroundImage: "url('/img/map.png')",
         borderRadius: "15px 15px 0 0",
       }}
     >
@@ -12,26 +12,52 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-3 col-md-6 col-12">
               <div className="single-widget footer-about widget">
-                <div className="logo">
-                  <div className="img-logo">
-                    <a className="logo" href="index.html">
-                      <div className="flex flex-col">
-                        <h4
-                          style={{ color: "#fff" }}
-                          className=" logo-text relative z-10"
-                        >
-                          Two four{" "}
-                        </h4>
-                        <h4
-                          style={{ color: "#f3a712" }}
-                          className=" logo-text -translate-y-5 absolute"
-                        >
-                          Solution
-                        </h4>
+              <div className="logo ">
+                      <div className="img-logo ">
+                        <a href="/">
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: ".6rem",
+                              transform: "translateY(-.7rem)",
+                            }}
+                            className=""
+                          >
+                            <div
+                              style={{
+                                width: "2.5rem",
+                                height: "2.5rem",
+                                transform: "translateY(.7rem) translateX(.4rem)",
+                            
+                              }}
+                              className=""
+                            >
+                              <img style={{
+                                display:"block",
+                                mixBlendMode:"darken"
+                              }} src="/logo.svg"  />
+                            </div>
+                            <div
+                              style={{ height: "1rem",transform:"translateY(-.3rem)" }}
+                              className="flex flex-col inline-block md:translate-y-0 justify-center items-center"
+                            >
+                              <h4 style={{color:"#fff"}} className="text-xs logo-text relative z-10">
+                                Two Four{" "}
+                              </h4>
+                              <h4
+                                style={{ color: "#4CAF50" }}
+                                className="text-xs logo-text  -translate-y-2 absolute"
+                              >
+                                Solution
+                              </h4>
+                            </div>
+                          </div>
+
+                          {/* <img src="img/agency/bizwheel-dark.png" alt="Two for Solution" /> */}
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                </div>
+                    </div>
                 <div className="footer-widget-about-description">
                   <p>
                     Welcome to Two Four Solutions, your trusted partner for
@@ -44,7 +70,6 @@ const Footer = () => {
                   <ul className="social-icons">
                     <li>
                       <a
-                      
                         className="facebook"
                         href="#"
                         target="_blank"
@@ -96,7 +121,11 @@ const Footer = () => {
                   </ul>
                 </div>
                 <div className="button">
-                  <a href="#" style={{borderRadius:"20px"}} className="bizwheel-btn">
+                  <a
+                    href="/about"
+                    style={{ borderRadius: "20px" }}
+                    className="bizwheel-btn"
+                  >
                     About Us
                   </a>
                 </div>
@@ -107,78 +136,55 @@ const Footer = () => {
                 <h3 className="widget-title">Company</h3>
                 <ul>
                   <li>
-                    <a href="#">About Us</a>
+                    <a href="/about">About Us</a>
                   </li>
                   <li>
-                    <a href="#">Our Services</a>
+                    <a href="/our-services">Our Services</a>
                   </li>
                   <li>
-                    <a href="#">Portfolio</a>
+                    <a href="/gallery">Gallery</a>
                   </li>
                   <li>
-                    <a href="#">Pricing Plan</a>
+                    <a href="/contact">Contact us</a>
                   </li>
                   <li>
-                    <a href="#">Contact us</a>
+                    <a href="/blog">Blog</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-12">
-              <div className="single-widget footer-news widget">
-                <h3 className="widget-title">Blog Page</h3>
-                <div className="single-f-news">
-                  <div className="post-thumb">
-                    <a href="#">
-                      <img src="img/blog/blog-3.jpg" alt="#" />
+            <div className="col-lg-2 col-md-6 col-12">
+              <div className="single-widget f-link widget">
+                <h3 className="widget-title">Services</h3>
+                <ul>
+                  <li>
+                    <a href="/project-management-services">
+                      Project&nbsp;Management&nbsp;
                     </a>
-                  </div>
-                  <div className="content">
-                    <p className="post-meta">
-                      <i className="fa-regular fa-clock"></i>April 15, 2020
-                    </p>
-                    <h4 className="title">
-                      <a href="blog-single.html">
-                        We Provide you Best &amp; Creative Consulting Service
-                      </a>
-                    </h4>
-                  </div>
-                </div>
-                <div className="single-f-news">
-                  <div className="post-thumb">
-                    <a href="#">
-                      <img src="img/blog/blog-4.jpg" alt="#" />
-                    </a>
-                  </div>
-                  <div className="content">
-                    <p className="post-meta">
-                      <i className="fa-regular fa-clock"></i>April 10, 2020
-                    </p>
-                    <h4 className="title">
-                      <a href="blog-single.html">
-                        We Provide you Best &amp; Creative Consulting Service
-                      </a>
-                    </h4>
-                  </div>
-                </div>
+                  </li>
+                  <li>
+                    <a href="/oil-field-chemicals">Oil&nbsp;Field&nbsp;Chemicals</a>
+                  </li>
+                  <li>
+                    <a href="/general-trading">General&nbsp;Trading</a>
+                  </li>
+                </ul>
               </div>
             </div>
+
             <div className="col-lg-3 col-md-6 col-12">
               <div className="single-widget footer_contact widget">
                 <h3 className="widget-title">Contact</h3>
-                <p>
-                  Beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-                </p>
+               
                 <ul className="address-widget-list">
                   <li className="footer-mobile-number">
-                    <i className="fa fa-phone"></i>+(600) 125-4985-214
+                    <i className="fa fa-phone"></i>+(971) 505949586
                   </li>
                   <li className="footer-mobile-number">
-                    <i className="fa fa-envelope"></i>info@yoursite.com
+                    <i className="fa fa-envelope"></i>gm@twofoursolutions.com
                   </li>
                   <li className="footer-mobile-number">
-                    <i className="fa-solid fa-location-dot"></i>House Building
-                    Uttara
+                    <i className="fa-solid fa-location-dot"></i>Ras Al Khaimah, UAE
                   </li>
                 </ul>
               </div>
@@ -186,10 +192,24 @@ const Footer = () => {
           </div>
           <div className="row">
             <div className="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
-              <div style={{borderRadius:"20px"}} className="footer-newsletter">
-                <form style={{borderRadius:"20px",backgroundColor:"#ffffff40"}} action="#" method="post" className="newsletter-area">
-                  <input style={{borderRadius:"20px",backgroundColor:"white" }} type="email" placeholder="Your email address" />
-                  <button style={{borderRadius:"20px"}} type="submit">Sign Up</button>
+              <div
+                style={{ borderRadius: "20px" }}
+                className="footer-newsletter"
+              >
+                <form
+                  style={{ borderRadius: "20px", backgroundColor: "#ffffff40" }}
+                  action="#"
+                  method="post"
+                  className="newsletter-area"
+                >
+                  <input
+                    style={{ borderRadius: "20px", backgroundColor: "white" }}
+                    type="email"
+                    placeholder="Your email address"
+                  />
+                  <button style={{ borderRadius: "20px" }} type="submit">
+                    Sign Up
+                  </button>
                 </form>
               </div>
             </div>
@@ -206,7 +226,7 @@ const Footer = () => {
                   Development By
                   <a target="_blank" href="https://picmaticweb.com/">
                     {" "}
-                      Abshar777
+                    Abshar777
                   </a>
                 </p>
               </div>

@@ -27,3 +27,24 @@ export const features = [
     },
 
 ]
+
+// Our local presence in key regional markets allows us to offer rapid response times, with support often available within 24 hours.
+// We provide ongoing technical support and performance monitoring to ensure long-term success for our clients.
+// To support our international clientele, our team members possess visa-on-arrival access to GCC countries, enabling them to provide on-site service and consultation as needed.
+// In addition, we maintain a network of strategic partners and suppliers that allows us to source and deliver high-quality materials and components globally, with unmatched lead times and cost efficiency.
+
+export const serviceCommitment = [
+    {
+
+        description: "Our local presence in key regional markets allows us to offer rapid response times, with support often available within 24 hours.",
+    },
+    {
+        description: "We provide ongoing technical support and performance monitoring to ensure long-term success for our clients.",
+    },
+    {
+        description: "To support our international clientele, our team members possess visa-on-arrival access to GCC countries, enabling them to provide on-site service and consultation as needed.",
+    },
+    {
+        description: "We maintain a network of strategic partners and suppliers that allows us to source and deliver high-quality materials and components globally, with unmatched lead times and cost efficiency.",
+    }
+]

@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   FaSearch,
   FaBars,
@@ -18,9 +18,7 @@ const Topbar: React.FC = () => {
               <div className="single-contact">
                 <i className="fa fa-envelope-open"></i>Email: gm@twofoursolutions.com
               </div>
-              <div className="single-contact">
-                <i className="fa-regular fa-clock"></i>Opening: 08AM - 09PM
-              </div>
+          
             </div>
             {/* End Top Contact */}
           </div>
