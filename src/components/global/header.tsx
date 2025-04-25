@@ -1,7 +1,9 @@
 
 import Topbar from "../ui/topbar";
 import { navItems } from "../../constants/header";
+import { useNavigate } from "react-router-dom";
 const Header: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <header className="header one">
       <Topbar />
@@ -88,13 +90,17 @@ const Header: React.FC = () => {
                                       : ""
                                   }`}
                                 >
-                                  <a href={item.link}>{item.name}</a>
+                                  <a onClick={() => {
+                                    navigate(item.link);
+                                  }}>{item.name}</a>
                                   {item.children.length > 0 && (
                                     <ul className="sub-menu">
                                       {item.children.map(
                                         (child, childIndex) => (
                                           <li key={childIndex}>
-                                            <a href={child.link}>
+                                            <a onClick={() => {
+                                              navigate(child.link);
+                                            }}>
                                               {child.name}
                                             </a>
                                           </li>
