@@ -19,7 +19,7 @@ export const serviceWeProvide = [
         icon: "fa-solid fa-handshake",
         image: "img/services/service-01.jpg",
         title: "Project Management Services",
-        description: "We provide comprehensive project management solutions, ensuring your projects are executed efficiently, on time, and within budget. Our experienced team manages every aspect of project delivery, from planning and risk management to execution and closeout, chemicals, and manufacturing.",
+        description: "We provide comprehensive project management solutions, ensuring your projects are executed efficiently, on time, and within budget. Our experienced team manages every aspect of project delivery, from planning and risk management to execution and closeout.",
     },
     {
         icon: "fa-solid fa-flask",
@@ -47,7 +47,7 @@ export const serviceWeProvide2 = [
         icon: "fa-solid fa-handshake",
         image: "img/services/service-01.jpg",
         title: "Project Management Services",
-        description: "We provide comprehensive project management solutions, ensuring your projects are executed efficiently, on time, and within budget. Our experienced team manages every aspect of project delivery, from planning and risk management to execution and closeout, chemicals, and manufacturing.",
+        description: "We provide comprehensive project management solutions, ensuring your projects are executed efficiently, on time, and within budget. Our experienced team manages every aspect of project delivery, from planning and risk management to execution and closeout.",
     },
     {
         icon: "fa-solid fa-flask",

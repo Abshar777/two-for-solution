@@ -71,8 +71,9 @@ const ContactUs = () => {
               <div className="contact-title">
                 <h2>Contact with us</h2>
                 <p>
-                  euismod eu augue. Etiam vel dui arcu. Cras varius mieros pharetra, id aliquam metus
-                  venenatis. Donec sollicit
+                We’d love to hear from you! Whether you have a question, need a quote, or want to discuss a project, feel free to reach out — we’re here to help.
+
+
                 </p>
               </div>
               {/* Single Contact */}
@@ -90,15 +91,8 @@ const ContactUs = () => {
               {/* End Single Contact */}
               {/* Single Contact */}
               <div className="single-contact-box">
-                <div className="c-icon">
-                  <i className="fa fa-phone"></i>
-                </div>
-                <div className="c-text">
-                  <h4>Call Us Now</h4>
-                  <p>
-                    Tel.: 888 765 4321<br /> Mob.: 765 654 3451
-                  </p>
-                </div>
+               
+               
               </div>
               {/* End Single Contact */}
               {/* Single Contact */}
@@ -109,7 +103,8 @@ const ContactUs = () => {
                 <div className="c-text">
                   <h4>Email Us</h4>
                   <p>
-                    contact@bizwheel.com<br />info@bizwheel.com
+                  gm@twofoursolutions.com<br />
+                  
                   </p>
                 </div>
               </div>

@@ -4,21 +4,24 @@ const TestimonialSection: React.FC = () => {
   const testimonials = [
     {
       clientImg: 'img/client/client-7.png',
-      userImg: 'img/users/user-01.png',
-      name: 'MarkPhillips',
-      location: 'Alaska, US',
+      userImg: 'images/avatar.webp',
+      name: 'Riyas Hakeem',
+      testi:"We’ve been sourcing our components from twoFourSolution for over two years. Their consistency in quality and timely deliveries have helped us meet our production deadlines smoothly.",
+      location: 'Dubai, UAE',
     },
     {
       clientImg: 'img/client/client-8.png',
-      userImg: 'img/users/user-02.png',
-      name: 'MarkPhillips',
-      location: 'Alaska, US',
+      userImg: 'images/avatar.webp',
+      name: 'Arjun R',
+      testi:"twoFourSolution has been a reliable partner for our custom manufacturing needs. Their team is easy to work with, and they always deliver exactly what we need.",
+      location: 'Masket, Oman',
     },
     {
       clientImg: 'img/client/client-9.png',
-      userImg: 'img/users/user-03.png',
-      name: 'MarkPhillips',
-      location: 'Alaska, US',
+      userImg: 'images/avatar.webp',
+      name: 'Usman O',
+      testi:"Great experience with twoFourSolution. From the first order to now, their service and product quality have been consistent. Highly recommended.",
+      location: 'RAK, UAE',
     },
   ];
 
@@ -34,7 +37,7 @@ const TestimonialSection: React.FC = () => {
           <div className="col-lg-4 text-center position-relative">
             <h4 className="home-three-subtitle">TESTIMONIALS</h4>
             <h2 className="home-three-title">What People Say</h2>
-            <img src="img/icons/icon-06.svg" alt="Icon" className="quote-icon" />
+            <img  src="img/icons/icon-06.svg" alt="Icon" className="quote-icon" />
           </div>
         </div>
         <div className="testimonial-slider-4">
@@ -49,12 +52,11 @@ const TestimonialSection: React.FC = () => {
                   {/* <img src="img/icons/icon-05.svg" alt="Quote" className="icon" /> */}
                 </div>
                 <p className="author-quote">
-                  Customer support is excellent and documentation good – novice can easily understand.
-                  Although I had a problem with the performance, thanks to the customer support.
+                  {testimonial.testi}
                 </p>
                 <div className="author">
                   <div>
-                    <img src={testimonial.userImg} alt="User" />
+                    <img style={{width:"30px",height:"30px",objectFit:"cover",borderRadius:"50%"}} src={testimonial.userImg} alt="User" />
                   </div>
                   <div>
                     <p className="author-name">{testimonial.name}</p>

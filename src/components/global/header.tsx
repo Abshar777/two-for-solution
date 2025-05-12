@@ -116,9 +116,7 @@ const Header: React.FC = () => {
                       </nav>
                       {/* End Main Menu */}
                       <div className="right-button rounded-[15px]">
-                        <a href="contact" className="bizwheel-btn">
-                          Get a Quote
-                        </a>
+                    
                       </div>
                     </div>
                   </div>
@@ -142,20 +140,19 @@ const Header: React.FC = () => {
             Two Four Solutions LLC is a UAE based company that provides a wide range of services to the oil and gas industry.
           </p>
           <ul className="address-widget-list">
-            <li className="footer-mobile-number">
-              <i className="fa fa-phone"></i> +(971) 505949586
-            </li>
-            <li className="footer-mobile-number">
-              <i className="fa fa-envelope"></i> gm@twofoursolutions.com
+          
+            <li onClick={()=>{
+              console.log("sdfghkl;")
+              window.open("mailto:gm@twofoursolutions.com","_blank")
+            }} className="footer-mobile-number">
+              <i className="fa fa-envelope"></i> <a >gm@twofoursolutions.com</a>
             </li>
             <li className="footer-mobile-number">
               <i className="fa-solid fa-location-dot"></i> Ras Al Khaimah, UAE
             </li>
           </ul>
           <div className="side-button">
-            <a style={{borderRadius:"20px"}} href="contact" className="bizwheel-btn theme-2 effect">
-              Get a Quote
-            </a>
+        
           </div>
         </div>
         <div className="single-content">

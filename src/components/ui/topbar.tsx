@@ -12,11 +12,11 @@ const Topbar: React.FC = () => {
           <div className="col-lg-8 col-12">
             {/* Top Contact */}
             <div className="top-contact ">
-              <div className="single-contact">
-                <i className="fa fa-phone"></i>Phone: +(971) 505949586
-              </div>
-              <div className="single-contact">
-                <i className="fa fa-envelope-open"></i>Email: gm@twofoursolutions.com
+            
+              <div onClick={()=>{
+                window.open("mailto:gm@twofoursolutions.com","_blank")
+              }} className="single-contact">
+               <a href="mailto:gm@twofoursolutions.com"><i className="fa fa-envelope-open"></i>Email: gm@twofoursolutions.com</a> 
               </div>
           
             </div>

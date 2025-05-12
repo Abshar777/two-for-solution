@@ -177,9 +177,7 @@ const Footer = () => {
                 <h3 className="widget-title">Contact</h3>
                
                 <ul className="address-widget-list">
-                  <li className="footer-mobile-number">
-                    <i className="fa fa-phone"></i>+(971) 505949586
-                  </li>
+                  
                   <li className="footer-mobile-number">
                     <i className="fa fa-envelope"></i>gm@twofoursolutions.com
                   </li>

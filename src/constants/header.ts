@@ -18,11 +18,7 @@ export const navItems = [
         name: "Home",
         link: "/",
         children: []
-    },
-    {
-        name: "Our Services",
-        link: "/our-services",
-        children: ourServices
+
     },
     {
         name: "About Us",
@@ -30,13 +26,20 @@ export const navItems = [
         children: []
     },
     {
-        name: "Contact Us",
-        link: "/contact-us",
-        children: []
+        name: "Our Services",
+        link: "/our-services",
+        children: ourServices
     },
     {
         name: "Gallery",
         link: "/gallery",
         children: []
-    }
+    },
+
+    {
+        name: "Contact Us",
+        link: "/contact-us",
+        children: []
+    },
+
 ]
