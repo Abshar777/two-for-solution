@@ -15,19 +15,9 @@ const VideoFeature: React.FC = () => {
               <div className="img-feature">
                 <img src={img} className="rounded-2xl" alt="Video Thumbnail" />
                 <div className="video-play">
-                  {/* <a
-                  href="https://www.youtube.com/watch?v=RLlPLqrw8Q4"
-                  className="video video-popup mfp-iframe"
-                >
-                  <i className="fa fa-play"></i>
-                </a> */}
-                  {/* <div className="waves-block">
-                  <div className="waves wave-1"></div>
-                  <div className="waves wave-2"></div>
-                  <div className="waves wave-3"></div>
-                </div> */}
+                
                 </div>
-                <span>Why choos us</span>
+                <span>Why choose us</span>
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-12">
