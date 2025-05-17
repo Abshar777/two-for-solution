@@ -8,5 +8,5 @@ export default defineConfig({
  build:{
   
  },
- base: 'two-for-solution',
+ base: '/two-for-solution/',
 })
