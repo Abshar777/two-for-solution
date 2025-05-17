@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { features } from "../../constants/features";
 
 const FeaturesArea: React.FC = () => {
@@ -26,13 +27,13 @@ const FeaturesArea: React.FC = () => {
                   <i className={feature.icon}></i>
                 </div>
                 <h4>
-                  <a href="service-single.html">{feature.title}</a>
+                  <Link to="/">{feature.title}</Link>
                 </h4>
                 <p>{feature.description}</p>
                 <div className="button">
-                  <a href="service-single.html" className="bizwheel-btn">
+                  <Link to="/about" className="bizwheel-btn">
                     <i className="fa-solid fa-circle-arrow-right"></i>Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

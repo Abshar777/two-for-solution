@@ -1,3 +1,4 @@
+import { Link } from "lucide-react";
 
 const CallAction = () => {
   return (
@@ -20,13 +21,13 @@ const CallAction = () => {
             </div>
             <div style={{borderRadius:"20px"}} className="col-lg-3 col-12">
               <div className="button">
-                <a
-                  href="portfolio.html"
+                <Link
+                  to="/portfolio"
                   style={{ borderRadius: "20px" }}
                   className="bizwheel-btn"
                 >
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>

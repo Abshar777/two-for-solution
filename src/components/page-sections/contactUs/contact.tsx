@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   return (
@@ -110,9 +111,9 @@ const ContactUs = () => {
               </div>
               {/* End Single Contact */}
               <div style={{borderRadius:"20px"}} className="button">
-                <a style={{borderRadius:"20px"}} href="#" className="bizwheel-btn theme-1">
+                <Link style={{borderRadius:"20px"}} to="/portfolio" className="bizwheel-btn theme-1">
                   Our Works<i className="fa fa-angle-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

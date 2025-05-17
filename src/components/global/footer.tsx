@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer
@@ -14,7 +16,7 @@ const Footer = () => {
               <div className="single-widget footer-about widget">
               <div className="logo ">
                       <div className="img-logo ">
-                        <a href="/">
+                        <Link to="/">
                           <div
                             style={{
                               display: "flex",
@@ -55,7 +57,7 @@ const Footer = () => {
                           </div>
 
                           {/* <img src="img/agency/bizwheel-dark.png" alt="Two for Solution" /> */}
-                        </a>
+                        </Link>
                       </div>
                     </div>
                 <div className="footer-widget-about-description">
@@ -69,65 +71,65 @@ const Footer = () => {
                 <div className="social">
                   <ul className="social-icons">
                     <li>
-                      <a
+                      <Link
                         className="facebook"
-                        href="#"
+                        to="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <i className="fa-brands fa-facebook-f"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="twitter"
-                        href="#"
+                        to="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <i className="fa-brands fa-twitter"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="linkedin"
-                        href="#"
+                        to="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <i className="fa-brands fa-linkedin-in"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="pinterest"
-                        href="#"
+                        to="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <i className="fa-brands fa-pinterest-p"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="instagram"
-                        href="#"
+                        to="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <i className="fa-brands fa-instagram"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
                 <div className="button">
-                  <a
-                    href="/about"
+                  <Link
+                    to="/about"
                     style={{ borderRadius: "20px" }}
                     className="bizwheel-btn"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -136,19 +138,19 @@ const Footer = () => {
                 <h3 className="widget-title">Company</h3>
                 <ul>
                   <li>
-                    <a href="/about">About Us</a>
+                    <Link to="/about">About Us</Link>
                   </li>
                   <li>
-                    <a href="/our-services">Our Services</a>
+                    <Link to="/our-services">Our Services</Link>
                   </li>
                   <li>
-                    <a href="/gallery">Gallery</a>
+                    <Link to="/gallery">Gallery</Link>
                   </li>
                   <li>
-                    <a href="/contact">Contact us</a>
+                    <Link to="/contact">Contact us</Link>
                   </li>
                   <li>
-                    <a href="/blog">Blog</a>
+                    <Link to="/blog">Blog</Link>
                   </li>
                 </ul>
               </div>
@@ -158,15 +160,15 @@ const Footer = () => {
                 <h3 className="widget-title">Services</h3>
                 <ul>
                   <li>
-                    <a href="/project-management-services">
+                    <Link to="/project-management-services">
                       Project&nbsp;Management&nbsp;
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/oil-field-chemicals">Oil&nbsp;Field&nbsp;Chemicals</a>
+                    <Link to="/oil-field-chemicals">Oil&nbsp;Field&nbsp;Chemicals</Link>
                   </li>
                   <li>
-                    <a href="/general-trading">General&nbsp;Trading</a>
+                    <Link to="/general-trading">General&nbsp;Trading</Link>
                   </li>
                 </ul>
               </div>
@@ -220,12 +222,12 @@ const Footer = () => {
             <div className="col-12">
               <div className="copyright-content">
                 <p>
-                  © Copyright <a href="#">Abshar777</a>. Design &amp;
+                  © Copyright <Link to="#">Abshar777</Link>. Design &amp;
                   Development By
-                  <a target="_blank" href="https://picmaticweb.com/">
+                  <Link target="_blank" to="https://github.com/Abshar777">
                     {" "}
                     Abshar777
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>

@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import img from "../../../public/img/why-choose.jpg";
 import { whyChooseUs } from "../../constants/whyChoosUs";
 const VideoFeature: React.FC = () => {
@@ -44,17 +45,18 @@ const VideoFeature: React.FC = () => {
                     <div className="col-lg-6 col-md-6 col-12">
                       <div className="w-full h-full flex items-center justify-center">
                         <div className="feature-btn">
-                          <a
+                          <Link
                             style={{
                               backgroundColor: "#fff",
                               color: "#4CAF50",
                               borderRadius: "20px",
                             }}
-                            href="contact"
+                            to="/contact"
                             className="bizwheel-btn  theme-2"
                           >
                             Know More
-                          </a>
+                          </Link>
+
                         </div>
                       </div>
                     </div>

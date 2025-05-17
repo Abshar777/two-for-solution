@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Breadcrumbs = ({title, breadcrumb}: {title: string, breadcrumb:{link: string, title: string}[]}) => {
   return (
    <div style={{width:"100%",padding:"5px"}}>
@@ -11,7 +13,7 @@ const Breadcrumbs = ({title, breadcrumb}: {title: string, breadcrumb:{link: stri
                 <ul>
                   {/* <li><a href="index.html">Home</a></li> */}
                   {breadcrumb.map((item, index) => (
-                    <li key={index}><a href={item.link}>{item.title}</a></li>
+                    <li key={index}><Link to={item.link}>{item.title}</Link></li>
                   ))}
                 </ul>
               </div>

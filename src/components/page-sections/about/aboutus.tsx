@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const AboutUs: React.FC = () => {
@@ -14,12 +15,7 @@ const AboutUs: React.FC = () => {
                 alt="#"
               />
               <div className="video-play">
-                <a
-                  href="https://www.youtube.com/watch?v=RLlPLqrw8Q4"
-                  className="video video-popup mfp-iframe"
-                >
-                  <i className="fa fa-play"></i>
-                </a>
+            
               </div>
             </div>
             {/* /End About Video */}
@@ -59,14 +55,14 @@ const AboutUs: React.FC = () => {
                   </p>
                 </div>
                 <div style={{ borderRadius: "20px" }} className="button">
-                  <a
+                  <Link
                     data-aos="fade-up"
                     style={{ borderRadius: "25px" }}
-                    href="about.html"
+                    to="/about"
                     className="bizwheel-btn theme-2"
                   >
                     Learn More<i className="fa fa-angle-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

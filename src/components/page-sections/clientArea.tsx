@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const clients = [
   "img/client/client-1.png",
@@ -18,9 +19,9 @@ const ClientArea = () => {
               {clients.map((client, index) => (
                 <div key={index} className="single-slider">
                   <div className="single-client">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <Link to="/about" target="_blank" rel="noopener noreferrer">
                       <img src={client} alt={`Client ${index + 1}`} />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               ))}
