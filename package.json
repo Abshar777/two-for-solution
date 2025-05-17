@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Abshar777/two-for-solution",
+  "homepage": "https://Abshar777.github.io/two-for-solution",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
