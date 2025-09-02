@@ -14,9 +14,9 @@ const Topbar: React.FC = () => {
             <div className="top-contact ">
             
               <div onClick={()=>{
-                window.open("mailto:gm@twofoursolutions.com","_blank")
+                window.open("mailto:gm@twofoursolution.com","_blank")
               }} className="single-contact">
-               <a href="mailto:gm@twofoursolutions.com"><i className="fa fa-envelope-open"></i>Email: gm@twofoursolutions.com</a> 
+               <a href="mailto:gm@twofoursolution.com"><i className="fa fa-envelope-open"></i>Email: gm@twofoursolution.com</a> 
               </div>
           
             </div>

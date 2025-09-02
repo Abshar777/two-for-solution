@@ -85,7 +85,7 @@ const ContactUs = () => {
                 <div className="c-text">
                   <h4>Opening Hour</h4>
                   <p>
-                    Friday - Saturday<br />08AM - 10PM (everyday)
+                    Monday - Saturday<br />08AM - 10PM (everyday)
                   </p>
                 </div>
               </div>
@@ -104,7 +104,7 @@ const ContactUs = () => {
                 <div className="c-text">
                   <h4>Email Us</h4>
                   <p>
-                  gm@twofoursolutions.com<br />
+                  gm@twofoursolution.com<br />
                   
                   </p>
                 </div>

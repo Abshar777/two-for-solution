@@ -135,7 +135,7 @@ const Header: React.FC = () => {
           </button>
         </div>
         <div className="single-content">
-          <h4>About Two for Solution</h4>
+          <h4>About Two four Solution</h4>
           <p>
             Two Four Solutions LLC is a UAE based company that provides a wide range of services to the oil and gas industry.
           </p>
@@ -143,9 +143,9 @@ const Header: React.FC = () => {
           
             <li onClick={()=>{
               console.log("sdfghkl;")
-              window.open("mailto:gm@twofoursolutions.com","_blank")
+              window.open("mailto:gm@twofoursolution.com","_blank")
             }} className="footer-mobile-number">
-              <i className="fa fa-envelope"></i> <a >gm@twofoursolutions.com</a>
+              <i className="fa fa-envelope"></i> <a >gm@twofoursolution.com</a>
             </li>
             <li className="footer-mobile-number">
               <i className="fa-solid fa-location-dot"></i> Ras Al Khaimah, UAE

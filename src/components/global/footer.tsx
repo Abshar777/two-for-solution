@@ -181,7 +181,7 @@ const Footer = () => {
                 <ul className="address-widget-list">
                   
                   <li className="footer-mobile-number">
-                    <i className="fa fa-envelope"></i>gm@twofoursolutions.com
+                    <i className="fa fa-envelope"></i>gm@twofoursolution.com
                   </li>
                   <li className="footer-mobile-number">
                     <i className="fa-solid fa-location-dot"></i>Ras Al Khaimah, UAE
